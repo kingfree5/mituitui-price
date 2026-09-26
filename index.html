@@ -142,6 +142,34 @@
     .contact-bar { flex-direction: column; gap: 4px; padding: 14px; }
     .contact-divider { display: none; }
     .contact-item { width: 100%; justify-content: center; }
+  }
+  /* 尊享上岸 · 保上岸 */
+  .badge-baoan { background: #1a1a2e; color: #fdcb6e; }
+  .baoan-wrap { background: linear-gradient(135deg, #2d1b4e 0%, #1a1a2e 55%, #16213e 100%); border-radius: 16px; padding: 30px 32px; color: #fff; position: relative; overflow: hidden; }
+  .baoan-wrap::after { content: '顶配'; position: absolute; top: 14px; right: 14px; background: #fdcb6e; color: #1a1a2e; padding: 3px 14px; border-radius: 10px; font-size: 12px; font-weight: 800; }
+  .baoan-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+  .baoan-top h2 { font-size: 22px; font-weight: 800; }
+  .baoan-top h2 small { font-size: 13px; font-weight: 400; color: #b2bec3; margin-left: 8px; }
+  .baoan-price { font-size: 52px; font-weight: 800; color: #fdcb6e; margin: 8px 0 2px; }
+  .baoan-price small { font-size: 15px; font-weight: 400; color: #b2bec3; }
+  .baoan-note { font-size: 13px; color: #dfe6e9; }
+  .baoan-limit { background: linear-gradient(135deg,#e17055,#d63031); color: #fff; padding: 8px 18px; border-radius: 22px; font-size: 13px; font-weight: 700; white-space: nowrap; }
+  .baoan-slogan { margin-top: 14px; padding: 12px 16px; background: rgba(255,255,255,0.07); border-radius: 10px; font-size: 13px; color: #dfe6e9; line-height: 1.7; }
+  .baoan-slogan strong { color: #fdcb6e; }
+  .baoan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 26px; margin-top: 16px; }
+  .baoan-grid .bf { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: #dfe6e9; padding: 4px 0; }
+  .baoan-grid .bf::before { content: '\2713'; color: #fdcb6e; font-weight: 700; flex-shrink: 0; }
+  .baoan-team { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 18px; }
+  .baoan-tcard { background: rgba(255,255,255,0.07); border-radius: 10px; padding: 11px 14px; }
+  .baoan-tcard .tn { font-size: 13.5px; font-weight: 700; color: #fdcb6e; }
+  .baoan-tcard .td { font-size: 11.5px; color: #b2bec3; margin-top: 3px; line-height: 1.5; }
+  .baoan-promise { margin-top: 16px; padding: 14px 18px; background: rgba(253,203,110,0.12); border: 1px solid rgba(253,203,110,0.35); border-radius: 10px; font-size: 13px; color: #ffeaa7; line-height: 1.75; }
+  .baoan-promise strong { color: #fdcb6e; }
+  @media (max-width: 700px) {
+    .baoan-wrap { padding: 22px 20px; }
+    .baoan-grid { grid-template-columns: 1fr; }
+    .baoan-team { grid-template-columns: 1fr; }
+    .baoan-price { font-size: 40px; }
   }</style>
 </head>
 <body>
@@ -152,6 +180,7 @@
   <a href="#single">单项服务</a>
   <a href="#vip">VIP全包</a>
   <a href="#premium">尊享私教</a>
+  <a href="#baoan">尊享上岸</a>
   <a href="#compare">同行对比</a>
 </div>
 
@@ -286,6 +315,46 @@
   </div>
 </div>
 
+<!-- 尊享上岸 · 保上岸 -->
+<div class="section" id="baoan">
+  <div class="section-title"><span class="badge badge-baoan">顶配</span> 尊享上岸服务</div>
+  <div class="baoan-wrap">
+    <div class="baoan-top">
+      <div>
+        <h2>尊享上岸服务 <small>6 位导师 · 服务你一个人</small></h2>
+        <div class="baoan-price">9999 <small>一次性</small></div>
+        <div class="baoan-note">主服务期 12 个月 · 可延续至上岸 · 签正规服务合同</div>
+      </div>
+      <div class="baoan-limit">每月仅 3 个名额</div>
+    </div>
+    <div class="baoan-slogan">
+      <strong>相当于 6 个兔哥，服务你一个人。</strong><br>
+      不是一个人带你，是 6 位导师分工协作、各管一段，专属服务群里只有你一个学员——free 老师总控、暴龙老师管规划和简历、fz 老师管面试、惟吾老师管投递内推、烤土豆管排期盯办、胜天老师管交付复核。
+    </div>
+    <div class="baoan-grid">
+      <div class="bf">深度职业诊断 2 小时 + 书面报告</div>
+      <div class="bf">职业规划 + 简历 + 作品集，不限版本</div>
+      <div class="bf">模拟面试全真演练，逐题复盘</div>
+      <div class="bf">定向内推 + 投递盯办，跟进到面试邀约</div>
+      <div class="bf">专属服务排期表 + 每周任务表 + 每日打卡</div>
+      <div class="bf">笔试 / 面试 / 谈薪 / offer 选择全程把关</div>
+      <div class="bf">每份交付出门前两层复核，质量兜底</div>
+      <div class="bf">主服务期 12 个月，可延续到上岸为止</div>
+    </div>
+    <div class="baoan-team">
+      <div class="baoan-tcard"><div class="tn">free 老师 · 总控</div><div class="td">2 小时深度诊断、全程策略、offer 与谈薪总把关</div></div>
+      <div class="baoan-tcard"><div class="tn">暴龙老师 · 规划简历</div><div class="td">职业规划、简历重构、作品集打磨</div></div>
+      <div class="baoan-tcard"><div class="tn">fz 老师 · 面试</div><div class="td">面试讲义、全真模拟、逐题复盘</div></div>
+      <div class="baoan-tcard"><div class="tn">惟吾老师 · 投递内推</div><div class="td">公司清单、JD 匹配、定向内推</div></div>
+      <div class="baoan-tcard"><div class="tn">烤土豆 · 流程盯办</div><div class="td">排期、任务表、每日打卡、催办</div></div>
+      <div class="baoan-tcard"><div class="tn">胜天老师 · 质量管控</div><div class="td">每一份交付出门前的复核</div></div>
+    </div>
+    <div class="baoan-promise">
+      <strong>为什么是 6 个人带你：</strong>普通 VIP 是一个团队带一群学员，消息多、回复慢；尊享上岸反过来——<strong>6 位导师围着你一个人转</strong>。12 个月里，诊断、规划、简历、面试、投递、谈薪、offer，每一步都有人盯、有人催、有人复核，你只管往前跑。
+    </div>
+  </div>
+</div>
+
 <!-- 同行对比 -->
 <div class="section" id="compare">
   <div class="section-title"><span class="badge badge-compare">对比</span> 行业价格全景对比</div>
@@ -349,6 +418,15 @@
       <div class="mj-price" style="font-size:16px;">¥2,499-3,999</div>
     </div>
   </div>
+  <div class="mj-box" style="margin-top:6px;border-color:#fdcb6e;background:#1a1a2e;border-width:2px;">
+    <div class="mj-box-left">
+      <div class="mj-name" style="font-size:13px;color:#fdcb6e;">👑 尊享上岸服务（6 位导师服务你一人）</div>
+      <div class="mj-features" style="color:#b2bec3;">专属群盯办 · 12 个月全程陪跑 · 签正规服务合同 · 每月仅 3 个名额</div>
+    </div>
+    <div class="mj-box-right">
+      <div class="mj-price" style="font-size:16px;color:#fdcb6e;">¥9,999</div>
+    </div>
+  </div>
 
   <div class="stats-row">
     <div class="s-item">
@@ -362,8 +440,8 @@
   </div>
 
   <div class="conclusion-box">
-    <div class="cl-big">市场均价 ¥8,000 - ¥50,000 <span>|</span> 米推兔 ¥1,199</div>
-    <div class="cl-sub">同样的全流程服务 · 别人花一万到五万 · 我只收十分之一</div>
+    <div class="cl-big">市场均价 ¥8,000 - ¥50,000 <span>|</span> 米推兔 ¥1,199 起</div>
+    <div class="cl-sub">全程陪跑 1199 · 尊享私教 2499 起 · 尊享上岸 9999 · 别人花一万到五万，我们只收零头</div>
   </div>
 
   <div class="source">数据来源：各机构官网、公开报价及市场调研 · 实际价格以官方为准</div>
